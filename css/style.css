@@ -4,13 +4,40 @@
     box-sizing: border-box;
     font-style: Arial;
 }
-.alinhaLogo{
-    display: flex;
-align-items:center;
-justify-content: center;
-flex-direction: row;
+.alinhaLogo img{
+    max-height: 50px;
+    min-width: 100px;
+} 
+h1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
+.alinhaLogo{
+    height: 100px;
+    display: flex;
+    align-items:center;
+    background-color: #E5D7D7;
+    font-size: x-large;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media(max-width:500px) {
+    .alinhaLogo{
+        justify-content: center;
+    }
+}
+@media(max-width:315px) {
+    h1{
+        font-size: large;
+        transition: 1s;
+        max-width: 200px;
+    }
+}
+
 main{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,5 +53,4 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
 }
