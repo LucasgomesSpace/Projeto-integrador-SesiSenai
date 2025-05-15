@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <ul>
@@ -18,42 +20,107 @@
         <br>
         <p></p>
     </section>
-    
+
 
     <main>
         <section class="alinhaConteudoMAIN">
 
-            <section><h2>SOBRE</h2></section>
-            <article>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </article>
-            <section>
-                <h2>LOGIN</h2>
-            </section>
-            <section>
-             
-                <input type="text">
-                <input type="text">
-                <section>
-                    <button>ENTRAR</button>
-                    <button>CADASTRAR-SE</button>
+            <section class="sobre">
+                <h1>SOBRE</h1>
+                <section class="line">
+                    <section class="linha"></section>
+                </section>
+                <article>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </article>
+                <section class="alinhaLoginImput">
+                    <section class="titulo">
+                        <h1>LOGIN</h1>
+                        <section class="line">
+                            <section class="linha"></section>
+                        </section>
+                    </section>
+                </section>
+                    <section class="alinhaBtn">
+                    <input class="btn" type="text" id="dynamic-label-input" placeholder="Email">
+                    <input class="btn" type="password" id="dynamic-label-input" placeholder="Senha">
+                </section>
+                <section class="alinhabotoes">
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            ENTRAR
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <button class="blob-btn">
+                            CADASTRE-SE
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+
                 </section>
             </section>
         </section>
-
     </main>
-    <footer>
-        <p>Av. Padre Antônio Brunetti, 1360 - Vila Rio Branco, Itapetininga - SP, 18208-080</p>
-        <section>
-            <img src="" alt="">
-            <p>(15) 3275-7920</p>
-            <img src="" alt="">
-            <p>gruposesinho@email.com</p>
-        </section>
-        <img src="" alt="">
-        <section><p>©CopyRight 2025 - SesiSenaiEducacional - Todos os direitos reservados</p></section>
+    <section class="separacao"></section>
+    <footer class="footer">
+        <section class="responsividade">
 
+            <h4>Av. Padre Antônio Brunetti, 1360 - Vila Rio Branco, Itapetininga - SP, 18208-080</h4>
+
+            <section class="contact">
+                <section class="contato">
+                    <img src="img/telefone.png" alt="telefone" width="35px" height="35px">
+                    <h4>(15) 3275-7920</h4>
+                    <img src="img/email.png" alt="e-mail" width="35px" height="35px">
+                    <h4>gruposesinho@gmail.com</h4>
+                </section>
+            </section>
+            <section class="logo">
+                <img src="img/logo.png" alt="logo" width="150px">
+            </section>
+        </section>
+        <section class="copyright">
+            <h4>©CopyRight 2025 - SesiSenaiEducacional - Todos os direitos reservados</h4>
+        </section>
     </footer>
 
 </body>
+
 </html>
